@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-01-09T14:23:50Z" product-name="indiatravel">
+		<header/>
+		<body>
+			<trans-unit id="title.description">
+				<source>title</source>
+			</trans-unit>
+			<trans-unit id="short_description.description">
+				<source>shortDescription</source>
+			</trans-unit>
+			<trans-unit id="description.description">
+				<source>description</source>
+			</trans-unit>
+			<trans-unit id="timestamp.description">
+				<source>timestamp</source>
+			</trans-unit>
+			<trans-unit id="tags.description">
+				<source>tags</source>
+			</trans-unit>
+			<trans-unit id="seotitle.description">
+				<source>seotitle</source>
+			</trans-unit>
+			<trans-unit id="seodescription.description">
+				<source>seodescription</source>
+			</trans-unit>
+			<trans-unit id="seokeys.description">
+				<source>seokeys</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

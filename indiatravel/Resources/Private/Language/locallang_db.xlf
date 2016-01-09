@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-01-09T14:23:50Z" product-name="indiatravel">
+		<header/>
+		<body>
+			<trans-unit id="tx_indiatravel_domain_model_locality">
+				<source>Locality</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_locality.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_locality.short_description">
+				<source>Short Description</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_locality.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_locality.lat">
+				<source>Lat</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_locality.lng">
+				<source>Lng</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_locality.top_destination">
+				<source>Top Destination</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_locality.seotitle">
+				<source>Seotitle</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_locality.seodescription">
+				<source>Seodescription</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_locality.seokeys">
+				<source>Seokeys</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_locality.informations">
+				<source>Informations</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_locality.catogories">
+				<source>Catogories</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_locality.articles">
+				<source>Articles</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_locality.attractions">
+				<source>Attractions</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_category">
+				<source>Category</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_category.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_category.short_description">
+				<source>Short Description</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_category.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_category.seotitle">
+				<source>Seotitle</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_category.seodescription">
+				<source>Seodescription</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_category.seokeys">
+				<source>Seokeys</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_attraction">
+				<source>Attraction</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_attraction.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_attraction.short_description">
+				<source>Short Description</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_attraction.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_attraction.address">
+				<source>Address</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_attraction.lat">
+				<source>Lat</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_attraction.lng">
+				<source>Lng</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_attraction.site">
+				<source>Site</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_attraction.email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_attraction.phone">
+				<source>Phone</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_attraction.mobile">
+				<source>Mobile</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_attraction.fax">
+				<source>Fax</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_attraction.facebook">
+				<source>Facebook</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_attraction.gplus">
+				<source>Gplus</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_attraction.twitter">
+				<source>Twitter</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_attraction.type">
+				<source>Type</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_attractiontype">
+				<source>Attraction Type</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_attractiontype.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_attractiontype.short_description">
+				<source>Short Description</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_attractiontype.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_attractiontype.seotitle">
+				<source>Seotitle</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_attractiontype.seodescription">
+				<source>Seodescription</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_attractiontype.seokeys">
+				<source>Seokeys</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_article">
+				<source>Article</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_article.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_article.short_description">
+				<source>Short Description</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_article.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_article.timestamp">
+				<source>Timestamp</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_article.tags">
+				<source>Tags</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_article.seotitle">
+				<source>Seotitle</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_article.seodescription">
+				<source>Seodescription</source>
+			</trans-unit>
+			<trans-unit id="tx_indiatravel_domain_model_article.seokeys">
+				<source>Seokeys</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

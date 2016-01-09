@@ -1,0 +1,57 @@
+
+plugin.tx_indiatravel_frontendindia {
+	view {
+		templateRootPaths.0 = {$plugin.tx_indiatravel_frontendindia.view.templateRootPath}
+		partialRootPaths.0 = {$plugin.tx_indiatravel_frontendindia.view.partialRootPath}
+		layoutRootPaths.0 = {$plugin.tx_indiatravel_frontendindia.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_indiatravel_frontendindia.persistence.storagePid}
+	}
+}
+
+plugin.tx_indiatravel._CSS_DEFAULT_STYLE (
+	textarea.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	.tx-indiatravel table {
+		border-collapse:separate;
+		border-spacing:10px;
+	}
+
+	.tx-indiatravel table th {
+		font-weight:bold;
+	}
+
+	.tx-indiatravel table td {
+		vertical-align:top;
+	}
+
+	.typo3-messages .message-error {
+		color:red;
+	}
+
+	.typo3-messages .message-ok {
+		color:green;
+	}
+
+)
+
+ # Module configuration
+module.tx_indiatravel_web_indiatravelbackendindia {
+	persistence {
+		storagePid = {$module.tx_indiatravel_backendindia.persistence.storagePid}
+	}
+	view {
+		templateRootPaths.0 = {$module.tx_indiatravel_backendindia.view.templateRootPath}
+		partialRootPaths.0 = {$module.tx_indiatravel_backendindia.view.partialRootPath}
+		layoutRootPaths.0 = {$module.tx_indiatravel_backendindia.view.layoutRootPath}
+	}
+}
