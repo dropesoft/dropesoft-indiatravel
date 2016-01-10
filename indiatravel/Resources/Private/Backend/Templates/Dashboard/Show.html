@@ -1,0 +1,55 @@
+
+<f:layout name="Default" />
+<f:section name="content">
+    <h1>Listing for Locality</h1>
+
+    <f:flashMessages />
+
+    <table  class="tx_indiatravel" >
+        <tr>
+            <th><f:translate key="tx_indiatravel_domain_model_locality.title" /></th>
+            <th><f:translate key="tx_indiatravel_domain_model_locality.short_description" /></th>
+            <th><f:translate key="tx_indiatravel_domain_model_locality.description" /></th>
+            <th><f:translate key="tx_indiatravel_domain_model_locality.lat" /></th>
+            <th><f:translate key="tx_indiatravel_domain_model_locality.lng" /></th>
+            <th><f:translate key="tx_indiatravel_domain_model_locality.top_destination" /></th>
+            <th><f:translate key="tx_indiatravel_domain_model_locality.seotitle" /></th>
+            <th><f:translate key="tx_indiatravel_domain_model_locality.seodescription" /></th>
+            <th><f:translate key="tx_indiatravel_domain_model_locality.seokeys" /></th>
+            <th><f:translate key="tx_indiatravel_domain_model_locality.informations" /></th>
+            <th> </th>
+        </tr>
+
+        <f:for each="{localities}" as="locality">
+            <tr>
+                <td><f:link.action action="show" arguments="{locality : locality}"> {locality.title}</f:link.action></td>
+                <td><f:link.action action="show" arguments="{locality : locality}"> {locality.shortDescription}</f:link.action></td>
+                <td><f:link.action action="show" arguments="{locality : locality}"> {locality.description}</f:link.action></td>
+                <td><f:link.action action="show" arguments="{locality : locality}"> {locality.lat}</f:link.action></td>
+                <td><f:link.action action="show" arguments="{locality : locality}"> {locality.lng}</f:link.action></td>
+                <td><f:link.action action="show" arguments="{locality : locality}"> {locality.topDestination}</f:link.action></td>
+                <td><f:link.action action="show" arguments="{locality : locality}"> {locality.seotitle}</f:link.action></td>
+                <td><f:link.action action="show" arguments="{locality : locality}"> {locality.seodescription}</f:link.action></td>
+                <td><f:link.action action="show" arguments="{locality : locality}"> {locality.seokeys}</f:link.action></td>
+                <td><f:link.action action="show" arguments="{locality : locality}"> {locality.informations}</f:link.action></td>
+                <td>
+                    <ex:editLink
+                            parametersKey="edit[tx_indiatravel_domain_model_locality][{locality.uid}]"
+                            parametersValue="edit"
+                            returnUrl="tx_indiatravel_tools_indiatravelbackendindia[action]=show&tx_indiatravel_tools_indiatravelbackendindia[controller]=Dashboard&tx_indiatravel_tools_"
+                            pluginModuleName="tools_IndiatravelBackendindia"
+                            title="{f:translate(key: 'function_links_edit_page_1')}" >
+
+                            <span class="t3js-icon icon icon-size-small icon-state-default icon-actions-open" data-identifier="actions-open">
+                            	<span class="icon-markup">
+                                    <img src="/typo3/sysext/core/Resources/Public/Icons/T3Icons/actions/actions-open.svg" width="16" height="16">
+                                </span>
+                            </span>
+                    </ex:editLink>
+                </td>
+            </tr>
+        </f:for>
+    </table>
+
+    <f:link.action action="new">New Locality</f:link.action>
+</f:section>

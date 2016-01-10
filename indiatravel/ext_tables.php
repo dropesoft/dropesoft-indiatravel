@@ -16,11 +16,15 @@ if (TYPO3_MODE === 'BE') {
 	 */
 	\TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerModule(
 		'Dropesoft.' . $_EXTKEY,
-		'web',	 // Make module a submodule of 'web'
+		'tools',	 // Make module a submodule of 'web'
 		'backendindia',	// Submodule key
 		'',						// Position
 		array(
-			'Locality' => 'list, show','Category' => 'list, show','Attraction' => 'list, show','Article' => 'list, show',
+            'Dashboard'=>'show',
+			'Locality' => 'list, show',
+            'Category' => 'list, show',
+            'Attraction' => 'list, show',
+            'Article' => 'list, show',
 		),
 		array(
 			'access' => 'user,group',

@@ -19,6 +19,7 @@ CREATE TABLE tx_indiatravel_domain_model_locality (
 	catogories int(11) unsigned DEFAULT '0' NOT NULL,
 	articles int(11) unsigned DEFAULT '0' NOT NULL,
 	attractions int(11) unsigned DEFAULT '0' NOT NULL,
+	fal_related_files int(11) unsigned DEFAULT '0',
 
 	tstamp int(11) unsigned DEFAULT '0' NOT NULL,
 	crdate int(11) unsigned DEFAULT '0' NOT NULL,
@@ -116,6 +117,7 @@ CREATE TABLE tx_indiatravel_domain_model_attraction (
 	gplus varchar(255) DEFAULT '' NOT NULL,
 	twitter varchar(255) DEFAULT '' NOT NULL,
 	type int(11) unsigned DEFAULT '0' NOT NULL,
+	fal_related_files int(11) unsigned DEFAULT '0',
 
 	tstamp int(11) unsigned DEFAULT '0' NOT NULL,
 	crdate int(11) unsigned DEFAULT '0' NOT NULL,

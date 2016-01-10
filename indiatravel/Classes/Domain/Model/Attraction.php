@@ -139,7 +139,38 @@ class Attraction extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @cascade remove
      */
     protected $type = null;
-    
+
+    /**
+     * Fal related files
+     *
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Dropesoft\Indiatravel\Domain\Model\FileReference>
+     * @lazy
+     */
+    protected $falRelatedFiles;
+
+    /**
+     * __construct
+     */
+    public function __construct()
+    {
+        //Do not remove the next line: It would break the functionality
+        $this->initStorageObjects();
+    }
+
+    /**
+     * Initializes all ObjectStorage properties
+     * Do not modify this method!
+     * It will be rewritten on each save in the extension builder
+     * You may modify the constructor of this class instead
+     *
+     * @return void
+     */
+    protected function initStorageObjects()
+    {
+        $this->type = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
+        $this->falRelatedFiles = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
+    }
+
     /**
      * Returns the title
      *
@@ -433,29 +464,7 @@ class Attraction extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     {
         $this->twitter = $twitter;
     }
-    
-    /**
-     * __construct
-     */
-    public function __construct()
-    {
-        //Do not remove the next line: It would break the functionality
-        $this->initStorageObjects();
-    }
-    
-    /**
-     * Initializes all ObjectStorage properties
-     * Do not modify this method!
-     * It will be rewritten on each save in the extension builder
-     * You may modify the constructor of this class instead
-     *
-     * @return void
-     */
-    protected function initStorageObjects()
-    {
-        $this->type = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
-    }
-    
+
     /**
      * Adds a AttractionType
      *
@@ -499,4 +508,38 @@ class Attraction extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
         $this->type = $type;
     }
 
+    /**
+     * Get FAL related files
+     *
+     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Posit\Dolomiticlass\Domain\Model\FileReference>
+     */
+    public function getFalRelatedFiles()
+    {
+        return $this->falRelatedFiles;
+    }
+
+    /**
+     * Set FAL related files
+     *
+     * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage $falRelatedFiles FAL related files
+     * @return void
+     */
+    public function setFalRelatedFiles($falRelatedFiles)
+    {
+        $this->falRelatedFiles = $falRelatedFiles;
+    }
+
+    /**
+     * Adds a file to this files.
+     *
+     * @param FileReference $file
+     * @return void
+     */
+    public function addFalRelatedFile(FileReference $file)
+    {
+        if ($this->getFalRelatedFiles() === null) {
+            $this->falRelatedFiles = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
+        }
+        $this->getFalRelatedFiles()->attach($file);
+    }
 }

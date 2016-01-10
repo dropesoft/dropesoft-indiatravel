@@ -23,10 +23,12 @@ return array(
 		'iconfile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath('indiatravel') . 'Resources/Public/Icons/tx_indiatravel_domain_model_attraction.gif'
 	),
 	'interface' => array(
-		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, short_description, description, address, lat, lng, site, email, phone, mobile, fax, facebook, gplus, twitter, type',
+		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, short_description, description, address, lat, lng, site, email, phone, mobile, fax, facebook, gplus, twitter, type, fal_related_files',
 	),
 	'types' => array(
-		'1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, title, short_description, description, address, lat, lng, site, email, phone, mobile, fax, facebook, gplus, twitter, type, --div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access, starttime, endtime'),
+		'1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, title, short_description, description, address, lat, lng, site, email, phone, mobile, fax, facebook, gplus, twitter, type,
+		--div--;LLL:EXT:indiatravel/Resources/Private/Language/locallang_db.xlf:tabs.images, fal_related_files,
+		--div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access, starttime, endtime'),
 	),
 	'palettes' => array(
 		'1' => array('showitem' => ''),
@@ -261,6 +263,64 @@ return array(
 			),
 
 		),
-		
+        'fal_related_files' => array(
+            'exclude' => 0,
+            'label' => 'LLL:EXT:indiatravel/Resources/Private/Language/locallang_db.xlf:fal_related_files.title',
+            'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
+                'fal_related_files',
+                [
+                    'appearance' => [
+                        'createNewRelationLinkTitle' => 'LLL:EXT:indiatravel/Resources/Private/Language/locallang_db.xlf:fal_related_files.browser',
+                        'showPossibleLocalizationRecords' => 1,
+                        'showRemovedLocalizationRecords' => 1,
+                        'showAllLocalizationLink' => 1,
+                        'showSynchronizationLink' => 1
+                    ],
+                    'foreign_match_fields' => [
+                        'fieldname' => 'fal_related_files',
+                        'tablenames' => 'tx_indiatravel_domain_model_locality',
+                        'table_local' => 'sys_file',
+                    ],
+                    'foreign_types' => [
+                        '0' => [
+                            'showitem' => '
+						--palette--;LLL:EXT:indiatravel/Resources/Private/Language/locallang_db.xlf:fal_related_files.showinpreview;newsPalette,
+						--palette--;;imageoverlayPalette,
+						--palette--;;filePalette'
+                        ],
+                        \TYPO3\CMS\Core\Resource\File::FILETYPE_TEXT => [
+                            'showitem' => '
+						--palette--;LLL:EXT:indiatravel/Resources/Private/Language/locallang_db.xlf:fal_related_files.showinpreview;newsPalette,
+						--palette--;;imageoverlayPalette,
+						--palette--;;filePalette'
+                        ],
+                        \TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => [
+                            'showitem' => '
+						--palette--;LLL:EXT:indiatravel/Resources/Private/Language/locallang_db.xlf:fal_related_files.showinpreview;newsPalette,
+						--palette--;;imageoverlayPalette,
+						--palette--;;filePalette'
+                        ],
+                        \TYPO3\CMS\Core\Resource\File::FILETYPE_AUDIO => [
+                            'showitem' => '
+						--palette--;LLL:EXT:indiatravel/Resources/Private/Language/locallang_db.xlf:fal_related_files.showinpreview;newsPalette,
+						--palette--;;imageoverlayPalette,
+						--palette--;;filePalette'
+                        ],
+                        \TYPO3\CMS\Core\Resource\File::FILETYPE_VIDEO => [
+                            'showitem' => '
+						--palette--;LLL:EXT:indiatravel/Resources/Private/Language/locallang_db.xlf:fal_related_files.showinpreview;newsPalette,
+						--palette--;;imageoverlayPalette,
+						--palette--;;filePalette'
+                        ],
+                        \TYPO3\CMS\Core\Resource\File::FILETYPE_APPLICATION => [
+                            'showitem' => '
+						--palette--;LLL:EXT:indiatravel/Resources/Private/Language/locallang_db.xlf:fal_related_files.showinpreview;newsPalette,
+						--palette--;;imageoverlayPalette,
+						--palette--;;filePalette'
+                        ]
+                    ]
+                ]
+            )
+        ),
 	),
 );
